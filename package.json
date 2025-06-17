@@ -1,0 +1,41 @@
+{
+  "name": "human-relations-analysis",
+  "version": "1.0.0",
+  "description": "末武さんの議事録や思考メモをLLMが自律的に分析し、人間関係の洞察を提供するシステム",
+  "main": "scripts/analyze.js",
+  "scripts": {
+    "setup": "node scripts/db-setup.js",
+    "analyze": "node scripts/analyze.js",
+    "test": "node scripts/test-system.js",
+    "test-comprehensive": "node scripts/test-system.js",
+    "init-db": "node scripts/db-setup.js",
+    "clean": "rm -rf temp/* tmp/* *.log",
+    "optimize": "npm run clean && node -e \"console.log('Cache cleared')\"",
+    "start": "node scripts/analyze.js",
+    "production": "npm run clean && npm run test && npm run analyze",
+    "visualize": "node scripts/visualization-data-processor.js",
+    "serve": "node scripts/visualization-server.js",
+    "web": "npm run visualize && npm run serve",
+    "search": "node scripts/search-interface.js",
+    "search-test": "node scripts/search-engine.js && node scripts/reference-system.js",
+    "enhanced-search": "node scripts/enhanced-search.js",
+    "performance": "node scripts/performance-optimizer.js",
+    "security": "node scripts/security-enhancer.js",
+    "load-test": "node scripts/load-tester.js"
+  },
+  "keywords": [
+    "analysis",
+    "relationships",
+    "ai",
+    "learning"
+  ],
+  "author": "末武",
+  "license": "MIT",
+  "dependencies": {
+    "elasticlunr": "^0.9.5",
+    "node-cache": "^5.1.2",
+    "readline-sync": "^1.4.10",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}

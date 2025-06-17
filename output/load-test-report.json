@@ -1,0 +1,152 @@
+{
+  "timestamp": "2025-06-17 19:38:26",
+  "testResults": [
+    {
+      "test": "concurrent_file_reading",
+      "concurrency": 5,
+      "iterations": 20,
+      "totalOperations": 100,
+      "totalTime": 4,
+      "avgTime": 0.04,
+      "throughput": 27826,
+      "errors": 0,
+      "timestamp": "2025-06-17 19:38:26"
+    },
+    {
+      "test": "database_load",
+      "operations": 100,
+      "totalTime": 6,
+      "avgTime": 0.06,
+      "throughput": 17204,
+      "successRate": 100,
+      "errors": 0,
+      "timestamp": "2025-06-17 19:38:26"
+    },
+    {
+      "test": "memory_stress",
+      "dataSize": 100,
+      "iterations": 20,
+      "totalTime": 0,
+      "initialMemory": {
+        "heapUsed": 5.07,
+        "rss": 49.69
+      },
+      "finalMemory": {
+        "heapUsed": 6.4,
+        "rss": 50.22
+      },
+      "memoryGrowth": {
+        "heap": 1.32,
+        "rss": 0.53
+      },
+      "peakMemory": 5.63,
+      "snapshots": [
+        {
+          "iteration": 0,
+          "heapUsed": 5.13,
+          "heapTotal": 9.31,
+          "rss": 49.73
+        },
+        {
+          "iteration": 10,
+          "heapUsed": 5.63,
+          "heapTotal": 9.31,
+          "rss": 49.8
+        }
+      ],
+      "timestamp": "2025-06-17 19:38:26"
+    },
+    {
+      "test": "system_integration",
+      "cycles": 10,
+      "totalTime": 46,
+      "avgCycleTime": 4.61,
+      "successRate": 100,
+      "avgSearchResults": 6,
+      "avgMemoryUsed": 8.22,
+      "results": [
+        {
+          "cycle": 1,
+          "time": 12,
+          "searchResults": 6,
+          "memoryUsed": 6.24,
+          "success": true
+        },
+        {
+          "cycle": 2,
+          "time": 4,
+          "searchResults": 6,
+          "memoryUsed": 7.18,
+          "success": true
+        },
+        {
+          "cycle": 3,
+          "time": 4,
+          "searchResults": 6,
+          "memoryUsed": 7.32,
+          "success": true
+        },
+        {
+          "cycle": 4,
+          "time": 4,
+          "searchResults": 6,
+          "memoryUsed": 8.24,
+          "success": true
+        },
+        {
+          "cycle": 5,
+          "time": 3,
+          "searchResults": 6,
+          "memoryUsed": 9.16,
+          "success": true
+        },
+        {
+          "cycle": 6,
+          "time": 4,
+          "searchResults": 6,
+          "memoryUsed": 10.08,
+          "success": true
+        },
+        {
+          "cycle": 7,
+          "time": 4,
+          "searchResults": 6,
+          "memoryUsed": 7.75,
+          "success": true
+        },
+        {
+          "cycle": 8,
+          "time": 4,
+          "searchResults": 6,
+          "memoryUsed": 8.66,
+          "success": true
+        },
+        {
+          "cycle": 9,
+          "time": 3,
+          "searchResults": 6,
+          "memoryUsed": 9.6,
+          "success": true
+        },
+        {
+          "cycle": 10,
+          "time": 4,
+          "searchResults": 6,
+          "memoryUsed": 7.97,
+          "success": true
+        }
+      ],
+      "timestamp": "2025-06-17 19:38:26"
+    }
+  ],
+  "errorLog": [],
+  "summary": {
+    "totalTests": 4,
+    "totalErrors": 0,
+    "overallPerformance": {
+      "grade": "D",
+      "score": 61,
+      "details": "平均パフォーマンススコア"
+    }
+  }
+}

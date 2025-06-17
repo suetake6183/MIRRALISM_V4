@@ -1,0 +1,16 @@
+node_modules/
+.git/
+output/
+archive/
+database/
+*.log
+*.db
+.taskmaster/reports/
+*.backup
+*.bak
+temp/
+tmp/
+.DS_Store
+coverage/
+dist/
+build/

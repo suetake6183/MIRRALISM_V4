@@ -1,0 +1,194 @@
+{
+  "exportDate": "2025-06-17 19:21:09",
+  "systemStats": {
+    "patterns": {
+      "count": 14
+    },
+    "feedback": {
+      "count": 0
+    },
+    "analysis": {
+      "count": 2
+    },
+    "fileTypes": {
+      "count": 44
+    },
+    "methods": {
+      "count": 37
+    },
+    "categoryDistribution": [
+      {
+        "context": "meeting",
+        "count": 6
+      },
+      {
+        "context": "unknown",
+        "count": 2
+      },
+      {
+        "context": "personal",
+        "count": 2
+      },
+      {
+        "context": "ユーザーフィードバック要請",
+        "count": 1
+      },
+      {
+        "context": "proposal",
+        "count": 1
+      },
+      {
+        "context": "pending_llm_judgment",
+        "count": 1
+      },
+      {
+        "context": "meeting分析の成功事例",
+        "count": 1
+      }
+    ],
+    "timestamp": "2025-06-17 19:21:09"
+  },
+  "successPatterns": [
+    {
+      "pattern_description": "1. 参加者の抽出\n2. 発言内容の分析\n3. 決定事項の整理",
+      "pattern_details": null,
+      "context": "meeting",
+      "success_count": 21,
+      "last_used": "2025-06-17 14:11:27",
+      "created_at": "2025-06-17 09:04:39"
+    },
+    {
+      "pattern_description": "meetingタイプの判定成功パターン",
+      "pattern_details": "{\"contentSample\":\"2025年6月17日 対話型学習システムテスト\\n\\n参加者：末武修平、開発チーム\\n\\n議題：設計書準拠の対話型継続学習システムの動作確認\\n\\n末武修平：新しい学習システムをテストします。設計書16行目の「対話型実行」制約に完全準拠した実装であることを確認したいと思います。\\n\\n開発チーム：以下の機能を実装しました：\\n- 対話型学習プロンプトの表示\\n- ユーザーフィードバック要請の仕組み\\n- シンプルな学習\",\"llmJudgment\":\"meeting\",\"llmReasoning\":\"末武さんと開発チームの対話型学習システムテスト会議から判断\",\"analysisMethod\":\"1. 参加者の抽出\\n2. 発言内容の分析\\n3. 決定事項の整理 + リアルタイム関係性分析\",\"analysisResult\":{\"fileType\":\"meeting\",\"timestamp\":\"2025-06-17T17:04:35.904+09:00\",\"content\":{\"participants\":[\"末武修平\",\"開発チーム\"],\"statements\":[{\"speaker\":\"議題\",\"content\":\"設計書準拠の対話型継続学習システムの動作確認\"},{\"speaker\":\"末武修平\",\"content\":\"新しい学習システムをテストします。設計書16行目の「対話型実行」制約に完全準拠した実装であることを確認したいと思います。\"},{\"speaker\":\"開発チーム\",\"content\":\"以下の機能を実装しました：\"}],\"relationshipDynamics\":[{\"type\":\"発言パターン\",\"description\":\"複数人が対等に発言している\",\"confidence\":0.8}],\"communicationPatterns\":[],\"emotionalTones\":[{\"tone\":\"中立\",\"description\":\"事実ベースの冷静な議論\",\"strength\":1}],\"decisionMaking\":[{\"process\":\"議論中心\",\"description\":\"情報共有や意見交換が中心で、明確な決定には至っていない\",\"effectiveness\":\"中\"}],\"decisions\":[],\"nextActions\":[],\"summary\":\"2名による対等型の会議。情報交換中心で、中立な雰囲気。継続検討事項あり。\"}},\"analysisId\":\"analysis_1750147475904\",\"wasApproved\":true}",
+      "context": "meeting分析の成功事例",
+      "success_count": 9,
+      "last_used": "2025-06-17 17:04:35",
+      "created_at": "2025-06-17 14:04:22"
+    },
+    {
+      "pattern_description": "1. 参加者の抽出\n2. 発言内容の分析\n3. 決定事項の整理 + リアルタイム関係性分析",
+      "pattern_details": null,
+      "context": "meeting",
+      "success_count": 7,
+      "last_used": "2025-06-17 17:04:35",
+      "created_at": "2025-06-17 14:19:09"
+    },
+    {
+      "pattern_description": "[object Object]",
+      "pattern_details": null,
+      "context": "unknown",
+      "success_count": 7,
+      "last_used": "2025-06-17 13:47:34",
+      "created_at": "2025-06-17 12:01:57"
+    },
+    {
+      "pattern_description": "1. 主要テーマの抽出\n2. 感情や気づきの分析\n3. 次のアクションの提案",
+      "pattern_details": null,
+      "context": "personal",
+      "success_count": 5,
+      "last_used": "2025-06-17 13:41:32",
+      "created_at": "2025-06-17 09:46:56"
+    },
+    {
+      "pattern_description": "Claude Code自動判定によるmeeting分類",
+      "pattern_details": null,
+      "context": "meeting",
+      "success_count": 4,
+      "last_used": "2025-06-17 13:46:25",
+      "created_at": "2025-06-17 12:03:04"
+    },
+    {
+      "pattern_description": "Claude Code自動判定によるunknown分類",
+      "pattern_details": null,
+      "context": "unknown",
+      "success_count": 2,
+      "last_used": "2025-06-17 13:42:06",
+      "created_at": "2025-06-17 12:01:57"
+    },
+    {
+      "pattern_description": "[object Object]",
+      "pattern_details": null,
+      "context": "pending_llm_judgment",
+      "success_count": 2,
+      "last_used": "2025-06-17 12:13:24",
+      "created_at": "2025-06-17 11:57:27"
+    },
+    {
+      "pattern_description": "1. 提案内容の要約\n2. 関係者の整理\n3. 次のステップの明確化",
+      "pattern_details": null,
+      "context": "proposal",
+      "success_count": 2,
+      "last_used": "2025-06-17 11:52:42",
+      "created_at": "2025-06-17 10:11:35"
+    }
+  ],
+  "learningHistory": {
+    "period": "2025-05-18 から 2025-06-17",
+    "totalActivities": 97,
+    "patternGrowth": 14,
+    "feedbackVolume": 0,
+    "analysisAccuracy": 1,
+    "categoryTrends": [
+      {
+        "category": "meeting",
+        "count": 35
+      },
+      {
+        "category": "unknown",
+        "count": 11
+      },
+      {
+        "category": "personal",
+        "count": 5
+      },
+      {
+        "category": "pending_llm_judgment",
+        "count": 3
+      },
+      {
+        "category": "proposal",
+        "count": 2
+      },
+      {
+        "category": "meeting分析の成功事例",
+        "count": 1
+      },
+      {
+        "category": "ユーザーフィードバック要請",
+        "count": 1
+      }
+    ],
+    "improvementAreas": [
+      {
+        "area": "フィードバック収集",
+        "issue": "ユーザーフィードバックが不足",
+        "suggestion": "より積極的なフィードバック要請が必要"
+      }
+    ],
+    "timestamp": "2025-06-17 19:21:09"
+  },
+  "categories": [
+    "meeting",
+    "personal",
+    "proposal",
+    "unknown"
+  ],
+  "defaultApproaches": {
+    "meeting": {
+      "primary": "1. 参加者の抽出\n2. 発言内容の分析\n3. 決定事項の整理",
+      "reasoning": "meeting分析の標準アプローチ"
+    },
+    "personal": {
+      "primary": "1. 主要テーマの抽出\n2. 感情や気づきの分析\n3. 次のアクションの提案",
+      "reasoning": "personal分析の標準アプローチ"
+    },
+    "proposal": {
+      "primary": "1. 提案内容の要約\n2. 関係者の整理\n3. 次のステップの明確化",
+      "reasoning": "proposal分析の標準アプローチ"
+    },
+    "unknown": {
+      "primary": "1. 内容の分類\n2. 主要要素の抽出\n3. 適切な分析方法の提案",
+      "reasoning": "unknown分析の標準アプローチ"
+    }
+  }
+}

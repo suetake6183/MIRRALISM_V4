@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIRRALISM V4 - 関係性可視化システム</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #333;
+            margin: 0;
+            font-size: 2.2em;
+        }
+        
+        .header p {
+            color: #666;
+            margin: 10px 0 0 0;
+            font-size: 1.1em;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+        }
+        
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .control-group label {
+            font-weight: bold;
+            color: #555;
+        }
+        
+        .control-group select, .control-group button {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+            cursor: pointer;
+        }
+        
+        .control-group button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+        }
+        
+        .control-group button:hover {
+            background-color: #0056b3;
+        }
+        
+        .visualization-container {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .main-chart {
+            flex: 2;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            position: relative;
+        }
+        
+        .sidebar {
+            flex: 1;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            padding: 20px;
+        }
+        
+        .sidebar h3 {
+            color: #333;
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .stat-card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .stat-card h4 {
+            margin: 0 0 8px 0;
+            color: #333;
+            font-size: 0.9em;
+        }
+        
+        .stat-card .value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        .legend {
+            margin-top: 20px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            margin-right: 8px;
+        }
+        
+        .legend-label {
+            font-size: 0.9em;
+            color: #555;
+        }
+        
+        .tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            pointer-events: none;
+            max-width: 200px;
+            z-index: 1000;
+        }
+        
+        .node {
+            stroke: #fff;
+            stroke-width: 2px;
+            cursor: pointer;
+        }
+        
+        .link {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+        
+        .node-label {
+            font-size: 11px;
+            fill: #333;
+            text-anchor: middle;
+            pointer-events: none;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .visualization-container {
+                flex-direction: column;
+            }
+            
+            .controls {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MIRRALISM V4</h1>
+            <p>関係性可視化システム - LLM学習データと分析結果の視覚的表現</p>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="viewMode">表示モード:</label>
+                <select id="viewMode">
+                    <option value="network">ネットワーク表示</option>
+                    <option value="timeline">時系列表示</option>
+                    <option value="category">カテゴリ別表示</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="filterCategory">フィルタ:</label>
+                <select id="filterCategory">
+                    <option value="all">全て表示</option>
+                    <option value="分析">分析</option>
+                    <option value="判定">判定</option>
+                    <option value="学習">学習</option>
+                    <option value="対話">対話</option>
+                    <option value="テスト">テスト</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <button id="refreshData">データ更新</button>
+                <button id="exportSVG">SVG出力</button>
+                <button id="exportPNG">PNG出力</button>
+            </div>
+        </div>
+        
+        <div class="visualization-container">
+            <div class="main-chart" id="chartContainer">
+                <div class="loading" id="loadingMessage">データを読み込み中...</div>
+            </div>
+            
+            <div class="sidebar">
+                <h3>統計情報</h3>
+                <div class="stats-grid" id="statsContainer">
+                    <!-- 統計データがここに動的に挿入されます -->
+                </div>
+                
+                <div class="legend">
+                    <h4>凡例</h4>
+                    <div id="legendContainer">
+                        <!-- 凡例がここに動的に挿入されます -->
+                    </div>
+                </div>
+                
+                <div style="margin-top: 20px;">
+                    <h4>詳細情報</h4>
+                    <div id="detailsContainer">
+                        <p style="color: #666; font-size: 0.9em;">ノードをクリックして詳細を表示</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tooltip" id="tooltip" style="display: none;"></div>
+    
+    <script src="visualization.js"></script>
+</body>
+</html>
