@@ -1,0 +1,77 @@
+{
+  "extractionReport": {
+    "timestamp": "2025-06-18T01:08:39+09:00",
+    "source": "Maeda Kuniko Files Analysis",
+    "status": "completed",
+    "patternsExtracted": 4,
+    "categories": [
+      "business_structure",
+      "client_characteristics", 
+      "system_implementation",
+      "project_management"
+    ],
+    "patterns": [
+      {
+        "id": 1,
+        "description": "マルチ収益源モデル",
+        "category": "business_structure",
+        "keyInsights": [
+          "Multi-revenue stream model with Community (Hitolabo), Education (Life courses), Product sales, Supporter training programs",
+          "Hybrid online/offline approach with strong community focus",
+          "Notion-based system integration for efficiency",
+          "Phased implementation approach with 70% completion rule"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "Maeda Kunikoクライアント特性",
+        "category": "client_characteristics",
+        "keyInsights": [
+          "Profile: 51yo, nurse/farmer/health educator, '住所不定のポップなババア'",
+          "Multiple business verticals focused on human growth and health/wellness",
+          "Community-oriented approach with personal touch",
+          "IT literacy considerations important for system design"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "3段階システム実装手法",
+        "category": "system_implementation",
+        "keyInsights": [
+          "Three-phase methodology: Diagnosis → Construction → Operation/Expansion",
+          "Risk management with comprehensive contingency planning",
+          "User-centric design prioritizing simplicity",
+          "Scalability planning for business growth"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "協働型プロジェクト管理",
+        "category": "project_management",
+        "keyInsights": [
+          "Collaborative stakeholder approach (末武, ざわみさん, 孝子さん)",
+          "Detailed documentation and comprehensive planning",
+          "Success case references and risk mitigation strategies",
+          "Timeline: March 2025 start with phased rollout"
+        ]
+      }
+    ],
+    "databaseStats": {
+      "totalPatterns": 54,
+      "averageSuccessRate": 1.93,
+      "latestLearning": "2025-06-18 01:08:39"
+    },
+    "implementationDetails": {
+      "scriptLocation": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/learning-cycle.js",
+      "extractorScript": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/core/extract-learning-patterns.js",
+      "databaseLocation": "/Users/suetakeshuuhei/MIRRALISM_V4/database/learning.db",
+      "tableUsed": "learning_patterns"
+    },
+    "nextSteps": [
+      "Use these patterns for future similar client analysis",
+      "Reference business structure patterns for multi-revenue stream projects",
+      "Apply client characteristic insights for health/wellness sector clients",
+      "Implement 3-phase methodology for complex system implementations"
+    ]
+  }
+}

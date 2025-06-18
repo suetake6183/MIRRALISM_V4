@@ -1,0 +1,781 @@
+{
+  "statistics": {
+    "detectionDate": "2025-06-17T14:52:57.591Z",
+    "formats": {
+      "javascript": {
+        "sources": {
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/visualization/visualization-server.js": {
+            "lines": 173,
+            "tokens": 1342,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/visualization/visualization-data-processor.js": {
+            "lines": 214,
+            "tokens": 1710,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/testing/test-system.js": {
+            "lines": 252,
+            "tokens": 1932,
+            "sources": 1,
+            "clones": 1,
+            "duplicatedLines": 6,
+            "duplicatedTokens": 78,
+            "percentage": 2.38,
+            "percentageTokens": 4.04,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/testing/load-tester.js": {
+            "lines": 138,
+            "tokens": 1000,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/testing/load-test-runner.js": {
+            "lines": 374,
+            "tokens": 3478,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/testing/load-test-analyzer.js": {
+            "lines": 320,
+            "tokens": 2790,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/shared/quality-checker.js": {
+            "lines": 344,
+            "tokens": 2667,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/shared/output-manager.js": {
+            "lines": 120,
+            "tokens": 1119,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/shared/logger.js": {
+            "lines": 34,
+            "tokens": 262,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/security/security-enhancer.js": {
+            "lines": 284,
+            "tokens": 2250,
+            "sources": 1,
+            "clones": 1,
+            "duplicatedLines": 5,
+            "duplicatedTokens": 77,
+            "percentage": 1.76,
+            "percentageTokens": 3.42,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/security/security-checker.js": {
+            "lines": 279,
+            "tokens": 2277,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/security/file-validator.js": {
+            "lines": 362,
+            "tokens": 2729,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-interface.js": {
+            "lines": 334,
+            "tokens": 2551,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-engine.js": {
+            "lines": 106,
+            "tokens": 826,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js": {
+            "lines": 389,
+            "tokens": 2738,
+            "sources": 1,
+            "clones": 14,
+            "duplicatedLines": 186,
+            "duplicatedTokens": 1420,
+            "percentage": 47.81,
+            "percentageTokens": 51.86,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-core.js": {
+            "lines": 170,
+            "tokens": 1430,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/reference-system.js": {
+            "lines": 357,
+            "tokens": 2952,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/enhanced-search.js": {
+            "lines": 292,
+            "tokens": 2423,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/performance/performance-optimizer.js": {
+            "lines": 171,
+            "tokens": 1174,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/core/db-setup.js": {
+            "lines": 156,
+            "tokens": 444,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/core/analyze.js": {
+            "lines": 545,
+            "tokens": 4065,
+            "sources": 1,
+            "clones": 1,
+            "duplicatedLines": 25,
+            "duplicatedTokens": 217,
+            "percentage": 4.59,
+            "percentageTokens": 5.34,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/save-claude-analysis.js": {
+            "lines": 161,
+            "tokens": 1058,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/llm-manager.js": {
+            "lines": 242,
+            "tokens": 1715,
+            "sources": 1,
+            "clones": 2,
+            "duplicatedLines": 31,
+            "duplicatedTokens": 295,
+            "percentage": 12.81,
+            "percentageTokens": 17.2,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/learning-cycle.js": {
+            "lines": 246,
+            "tokens": 1646,
+            "sources": 1,
+            "clones": 1,
+            "duplicatedLines": 17,
+            "duplicatedTokens": 102,
+            "percentage": 6.91,
+            "percentageTokens": 6.2,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/effectiveness-tracker.js": {
+            "lines": 175,
+            "tokens": 1457,
+            "sources": 1,
+            "clones": 1,
+            "duplicatedLines": 5,
+            "duplicatedTokens": 77,
+            "percentage": 2.86,
+            "percentageTokens": 5.28,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/effectiveness-tracker-core.js": {
+            "lines": 309,
+            "tokens": 2337,
+            "sources": 1,
+            "clones": 1,
+            "duplicatedLines": 17,
+            "duplicatedTokens": 102,
+            "percentage": 5.5,
+            "percentageTokens": 4.36,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/effectiveness-statistics.js": {
+            "lines": 302,
+            "tokens": 2302,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analysis/correct_shigerishi_analysis.js": {
+            "lines": 321,
+            "tokens": 1781,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/migrate-output.js": {
+            "lines": 70,
+            "tokens": 601,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        },
+        "total": {
+          "lines": 7240,
+          "tokens": 55056,
+          "sources": 29,
+          "clones": 11,
+          "duplicatedLines": 146,
+          "duplicatedTokens": 1184,
+          "percentage": 2.02,
+          "percentageTokens": 2.15,
+          "newDuplicatedLines": 0,
+          "newClones": 0
+        }
+      }
+    },
+    "total": {
+      "lines": 7240,
+      "tokens": 55056,
+      "sources": 29,
+      "clones": 11,
+      "duplicatedLines": 146,
+      "duplicatedTokens": 1184,
+      "percentage": 2.02,
+      "percentageTokens": 2.15,
+      "newDuplicatedLines": 0,
+      "newClones": 0
+    }
+  },
+  "duplicates": [
+    {
+      "format": "javascript",
+      "lines": 13,
+      "fragment": ";\n            \n            if (options.limit) {\n                sql += ` LIMIT ?`;\n                params.push(options.limit);\n            }\n\n            const results = await db.all(sql, params);\n            await db.close();\n\n            return results.map(row => ({\n                ...row,\n                type: 'feedback'",
+      "tokens": 0,
+      "firstFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 108,
+        "end": 120,
+        "startLoc": {
+          "line": 108,
+          "column": 53,
+          "position": 816
+        },
+        "endLoc": {
+          "line": 120,
+          "column": 11,
+          "position": 908
+        }
+      },
+      "secondFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 53,
+        "end": 65,
+        "startLoc": {
+          "line": 53,
+          "column": 48,
+          "position": 430
+        },
+        "endLoc": {
+          "line": 65,
+          "column": 19,
+          "position": 522
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 16,
+      "fragment": ";\n                const searchTerm = `%${query.trim()}%`;\n                params.push(searchTerm, searchTerm, searchTerm);\n            }\n\n            // 日付フィルター\n            if (options.dateFrom) {\n                sql += ` AND created_at >= ?`;\n                params.push(options.dateFrom);\n            }\n            if (options.dateTo) {\n                sql += ` AND created_at <= ?`;\n                params.push(options.dateTo);\n            }\n\n            sql += ` ORDER BY confidence_score DESC, created_at DESC`",
+      "tokens": 0,
+      "firstFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 148,
+        "end": 163,
+        "startLoc": {
+          "line": 148,
+          "column": 82,
+          "position": 1087
+        },
+        "endLoc": {
+          "line": 163,
+          "column": 51,
+          "position": 1201
+        }
+      },
+      "secondFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 93,
+        "end": 108,
+        "startLoc": {
+          "line": 93,
+          "column": 94,
+          "position": 701
+        },
+        "endLoc": {
+          "line": 108,
+          "column": 53,
+          "position": 815
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 13,
+      "fragment": ";\n            \n            if (options.limit) {\n                sql += ` LIMIT ?`;\n                params.push(options.limit);\n            }\n\n            const results = await db.all(sql, params);\n            await db.close();\n\n            return results.map(row => ({\n                ...row,\n                type: 'analysis_result'",
+      "tokens": 0,
+      "firstFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 163,
+        "end": 175,
+        "startLoc": {
+          "line": 163,
+          "column": 51,
+          "position": 1202
+        },
+        "endLoc": {
+          "line": 175,
+          "column": 18,
+          "position": 1294
+        }
+      },
+      "secondFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 53,
+        "end": 65,
+        "startLoc": {
+          "line": 53,
+          "column": 48,
+          "position": 430
+        },
+        "endLoc": {
+          "line": 65,
+          "column": 19,
+          "position": 522
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 16,
+      "fragment": ";\n                const searchTerm = `%${query.trim()}%`;\n                params.push(searchTerm, searchTerm, searchTerm);\n            }\n\n            // 日付フィルター\n            if (options.dateFrom) {\n                sql += ` AND created_at >= ?`;\n                params.push(options.dateFrom);\n            }\n            if (options.dateTo) {\n                sql += ` AND created_at <= ?`;\n                params.push(options.dateTo);\n            }\n\n            sql += ` ORDER BY accuracy_score DESC, created_at DESC`",
+      "tokens": 0,
+      "firstFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 203,
+        "end": 218,
+        "startLoc": {
+          "line": 203,
+          "column": 82,
+          "position": 1473
+        },
+        "endLoc": {
+          "line": 218,
+          "column": 49,
+          "position": 1587
+        }
+      },
+      "secondFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 93,
+        "end": 108,
+        "startLoc": {
+          "line": 93,
+          "column": 94,
+          "position": 701
+        },
+        "endLoc": {
+          "line": 108,
+          "column": 53,
+          "position": 815
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 13,
+      "fragment": ";\n            \n            if (options.limit) {\n                sql += ` LIMIT ?`;\n                params.push(options.limit);\n            }\n\n            const results = await db.all(sql, params);\n            await db.close();\n\n            return results.map(row => ({\n                ...row,\n                type: 'file_type_learning'",
+      "tokens": 0,
+      "firstFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 218,
+        "end": 230,
+        "startLoc": {
+          "line": 218,
+          "column": 49,
+          "position": 1588
+        },
+        "endLoc": {
+          "line": 230,
+          "column": 21,
+          "position": 1680
+        }
+      },
+      "secondFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 53,
+        "end": 65,
+        "startLoc": {
+          "line": 53,
+          "column": 48,
+          "position": 430
+        },
+        "endLoc": {
+          "line": 65,
+          "column": 19,
+          "position": 522
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 16,
+      "fragment": ";\n                const searchTerm = `%${query.trim()}%`;\n                params.push(searchTerm, searchTerm, searchTerm);\n            }\n\n            // 日付フィルター\n            if (options.dateFrom) {\n                sql += ` AND created_at >= ?`;\n                params.push(options.dateFrom);\n            }\n            if (options.dateTo) {\n                sql += ` AND created_at <= ?`;\n                params.push(options.dateTo);\n            }\n\n            sql += ` ORDER BY effectiveness_score DESC, usage_count DESC`",
+      "tokens": 0,
+      "firstFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 258,
+        "end": 273,
+        "startLoc": {
+          "line": 258,
+          "column": 84,
+          "position": 1859
+        },
+        "endLoc": {
+          "line": 273,
+          "column": 55,
+          "position": 1973
+        }
+      },
+      "secondFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 93,
+        "end": 108,
+        "startLoc": {
+          "line": 93,
+          "column": 94,
+          "position": 701
+        },
+        "endLoc": {
+          "line": 108,
+          "column": 53,
+          "position": 815
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 13,
+      "fragment": ";\n            \n            if (options.limit) {\n                sql += ` LIMIT ?`;\n                params.push(options.limit);\n            }\n\n            const results = await db.all(sql, params);\n            await db.close();\n\n            return results.map(row => ({\n                ...row,\n                type: 'method_effectiveness'",
+      "tokens": 0,
+      "firstFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 273,
+        "end": 285,
+        "startLoc": {
+          "line": 273,
+          "column": 55,
+          "position": 1974
+        },
+        "endLoc": {
+          "line": 285,
+          "column": 23,
+          "position": 2066
+        }
+      },
+      "secondFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/search/search-database.js",
+        "start": 53,
+        "end": 65,
+        "startLoc": {
+          "line": 53,
+          "column": 48,
+          "position": 430
+        },
+        "endLoc": {
+          "line": 65,
+          "column": 19,
+          "position": 522
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 7,
+      "fragment": "const fs = require('fs').promises;\nconst path = require('path');\nconst sqlite3 = require('sqlite3').verbose();\nconst { open } = require('sqlite');\nconst { log, getJSTTimestamp } = require('../shared/logger');\n\n// 設計書準拠：学習データベース統合管理",
+      "tokens": 0,
+      "firstFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/llm-manager.js",
+        "start": 1,
+        "end": 7,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 7,
+          "column": 22,
+          "position": 78
+        }
+      },
+      "secondFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/testing/test-system.js",
+        "start": 1,
+        "end": 7,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 7,
+          "column": 32,
+          "position": 78
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 26,
+      "fragment": "autoDetectFileType(content) {\n        log('自動ファイル種別判定を実行中...');\n        \n        // 会議判定パターン\n        if (content.includes('参加者') || content.includes('議題') || \n            content.includes('打ち合わせ') || content.includes('会議') ||\n            content.includes('社労士') || content.includes('相談')) {\n            return 'meeting';\n        }\n        \n        // 提案書判定パターン  \n        if (content.includes('提案') || content.includes('企画') || \n            content.includes('計画書') || content.includes('仕様書')) {\n            return 'proposal';\n        }\n        \n        // 個人メモ判定パターン\n        if (content.includes('思考') || content.includes('メモ') || \n            content.includes('日記') || content.includes('個人的')) {\n            return 'personal';\n        }\n        \n        return 'unknown';\n    }\n\n    // 設計書準拠：LLM判定結果の処理",
+      "tokens": 0,
+      "firstFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/llm-manager.js",
+        "start": 166,
+        "end": 191,
+        "startLoc": {
+          "line": 166,
+          "column": 2,
+          "position": 1169
+        },
+        "endLoc": {
+          "line": 191,
+          "column": 20,
+          "position": 1386
+        }
+      },
+      "secondFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/core/analyze.js",
+        "start": 147,
+        "end": 172,
+        "startLoc": {
+          "line": 147,
+          "column": 2,
+          "position": 1082
+        },
+        "endLoc": {
+          "line": 172,
+          "column": 15,
+          "position": 1297
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 6,
+      "fragment": "results.report.recommendations.forEach((rec, index) => {\n                        log((index + 1) + '. [' + rec.priority.toUpperCase() + '] ' + rec.title + ': ' + rec.description);\n                    });\n                }\n                \n                if",
+      "tokens": 0,
+      "firstFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/effectiveness-tracker.js",
+        "start": 156,
+        "end": 161,
+        "startLoc": {
+          "line": 156,
+          "column": 21,
+          "position": 1222
+        },
+        "endLoc": {
+          "line": 161,
+          "column": 3,
+          "position": 1299
+        }
+      },
+      "secondFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/security/security-enhancer.js",
+        "start": 275,
+        "end": 278,
+        "startLoc": {
+          "line": 275,
+          "column": 17,
+          "position": 2148
+        },
+        "endLoc": {
+          "line": 278,
+          "column": 5,
+          "position": 2222
+        }
+      }
+    },
+    {
+      "format": "javascript",
+      "lines": 18,
+      "fragment": ";\n    }\n\n    // 設計書準拠：データベース接続\n    async getDbConnection() {\n        try {\n            const db = await open({\n                filename: this.learningDbPath,\n                driver: sqlite3.Database\n            });\n            return db;\n        } catch (error) {\n            log('データベース接続エラー: ' + error.message);\n            throw error;\n        }\n    }\n\n    // 設計書準拠：メソッド効果測定",
+      "tokens": 0,
+      "firstFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/effectiveness-tracker-core.js",
+        "start": 9,
+        "end": 26,
+        "startLoc": {
+          "line": 9,
+          "column": 2,
+          "position": 104
+        },
+        "endLoc": {
+          "line": 26,
+          "column": 18,
+          "position": 206
+        }
+      },
+      "secondFile": {
+        "name": "/Users/suetakeshuuhei/MIRRALISM_V4/scripts/analytics/learning-cycle.js",
+        "start": 10,
+        "end": 27,
+        "startLoc": {
+          "line": 10,
+          "column": 2,
+          "position": 115
+        },
+        "endLoc": {
+          "line": 27,
+          "column": 22,
+          "position": 217
+        }
+      }
+    }
+  ]
+}

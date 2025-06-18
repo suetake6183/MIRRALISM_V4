@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-06-17 23:52:56",
+  "designConstraints": {
+    "environmentVariables": {
+      "constraint": "環境変数依存禁止",
+      "count": 0,
+      "violations": [],
+      "passed": true
+    },
+    "backgroundProcesses": {
+      "constraint": "バックグラウンド処理禁止",
+      "count": 0,
+      "violations": [],
+      "passed": true
+    },
+    "decorativeLogs": {
+      "constraint": "装飾的ログ禁止",
+      "count": 1,
+      "violations": [
+        "scripts/analysis/correct_shigerishi_analysis.js:    console.log('\\n🎯 重要な議論ポイント:');"
+      ],
+      "passed": false
+    },
+    "apiUsage": {
+      "constraint": "API使用禁止",
+      "count": 0,
+      "violations": [],
+      "passed": true
+    },
+    "timestamp": "2025-06-17 23:52:56",
+    "totalViolations": 1,
+    "passed": false
+  },
+  "codeDuplication": {
+    "tool": "jscpd",
+    "duplicatesFound": 0,
+    "error": "Command failed: npx jscpd scripts/\n\u001b[31mERROR: jscpd found too many duplicates (2.02%) over threshold (1%)\u001b[39m\n",
+    "timestamp": "2025-06-17 23:52:57"
+  },
+  "dependencies": {
+    "tool": "madge",
+    "circularDependencies": 0,
+    "output": "[]\n",
+    "timestamp": "2025-06-17 23:52:58"
+  },
+  "unusedCode": {
+    "tool": "knip",
+    "unusedItems": 0,
+    "error": "Command failed: npx knip\nRemove entry: scripts/core/analyze.js\nRemove entry: scripts/core/db-setup.js\nRemove entry: scripts/testing/test-system.js\nRemove entry: scripts/search/search-engine.js\nRemove entry: scripts/testing/load-tester.js\nRemove entry: scripts/performance/performance-optimizer.js\nRemove entry: scripts/security/security-enhancer.js\nRemove from ignoreDependencies: sqlite3\n",
+    "timestamp": "2025-06-17 23:52:59"
+  },
+  "summary": {
+    "designConstraintsPassed": false,
+    "totalViolations": 1,
+    "duplicatesFound": 0,
+    "circularDependencies": 0,
+    "unusedItems": 0,
+    "overallQuality": 80
+  }
+}

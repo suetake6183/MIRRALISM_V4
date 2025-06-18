@@ -17,7 +17,24 @@
       "Bash(CLAUDE_CODE_FILE_TYPE=meeting CLAUDE_CODE_REASONING=\"文書構造と内容の総合的理解から会議議事録と判断\" node scripts/analyze.js)",
       "Bash(AUTO_APPROVE=false CLAUDE_CODE_FILE_TYPE=meeting CLAUDE_CODE_REASONING=\"文書構造と内容の総合的理解から会議議事録と判断\" node scripts/analyze.js)",
       "Bash(CLAUDE_CODE_FILE_TYPE=meeting CLAUDE_CODE_REASONING=\"Claude Code（LLM）による言語理解判定：テスト環境での動作確認。環境変数システムが正常に機能し、プログラム的判定を使用せずにLLM判定を実現。\" node scripts/analyze.js)",
-      "Bash(CLAUDE_CODE_FILE_TYPE=meeting CLAUDE_CODE_REASONING=\"Claude Code（LLM）による判定：統合テスト会議の議事録。参加者の専門分野、技術的議題、各担当者からの報告、テスト結果確認、決定事項の記載により、技術検証会議と判断。\" node scripts/analyze.js)"
+      "Bash(CLAUDE_CODE_FILE_TYPE=meeting CLAUDE_CODE_REASONING=\"Claude Code（LLM）による判定：統合テスト会議の議事録。参加者の専門分野、技術的議題、各担当者からの報告、テスト結果確認、決定事項の記載により、技術検証会議と判断。\" node scripts/analyze.js)",
+      "Bash(task-master show:*)",
+      "Bash(task-master set-status:*)",
+      "Bash(mkdir:*)",
+      "Bash(npm test)",
+      "Bash(task-master update-subtask:*)",
+      "Bash(mv:*)",
+      "Bash(tree:*)",
+      "Bash(export:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run quality:*)",
+      "Bash(npm run:*)",
+      "Bash(task-master next-task:*)",
+      "Bash(task-master:*)",
+      "mcp__ide__executeCode",
+      "Bash(for file in *.md)",
+      "Bash(do cp \"$file\" \"$file%.md.txt\")",
+      "Bash(done)"
     ],
     "deny": []
   }
